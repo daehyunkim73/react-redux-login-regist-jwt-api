@@ -1,0 +1,139 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "log\\error\\.b658c3e43b922ba2dbe1e19d197717251929572b-audit.json",
+    "files": [
+        {
+            "date": 1602664789276,
+            "name": "log\\error\\serverError-2020-10-14.log",
+            "hash": "8161202a6ff0095763b41883dfbdbec0"
+        },
+        {
+            "date": 1602714940520,
+            "name": "log\\error\\serverError-2020-10-15.log",
+            "hash": "df08bb015600120b4f65805ff2788f4c"
+        },
+        {
+            "date": 1602803801995,
+            "name": "log\\error\\serverError-2020-10-16.log",
+            "hash": "52ea09729a69ee03f389136a445deab2"
+        },
+        {
+            "date": 1603113096452,
+            "name": "log\\error\\serverError-2020-10-19.log",
+            "hash": "74120e294355ca800143f3a115e48eff"
+        },
+        {
+            "date": 1603338814010,
+            "name": "log\\error\\serverError-2020-10-22.log",
+            "hash": "338e4a3d7e27fba9d36b825479e3dda8"
+        },
+        {
+            "date": 1603456986232,
+            "name": "log\\error\\serverError-2020-10-23.log",
+            "hash": "bba08f5cc36847ad41344af0217c4e4e"
+        },
+        {
+            "date": 1603494916468,
+            "name": "log\\error\\serverError-2020-10-24.log",
+            "hash": "0738bb57707ea225f2d641b28045b3b1"
+        },
+        {
+            "date": 1603710911010,
+            "name": "log\\error\\serverError-2020-10-26.log",
+            "hash": "0307cb6d4810f072ebac7d1f24b84bf5"
+        },
+        {
+            "date": 1613862926307,
+            "name": "log\\error\\serverError-2021-02-21.log",
+            "hash": "4a6ef35cf227d36153c6744e0ec8353a"
+        },
+        {
+            "date": 1613984092832,
+            "name": "log\\error\\serverError-2021-02-22.log",
+            "hash": "c9388c8b83d68e6f7f5d2f9d66bc80ee"
+        },
+        {
+            "date": 1614009393231,
+            "name": "log\\error\\serverError-2021-02-23.log",
+            "hash": "5178ae12ccef36cb8a5370a21e7c1a79"
+        },
+        {
+            "date": 1614383050392,
+            "name": "log\\error\\serverError-2021-02-27.log",
+            "hash": "fc569bb5235a4b903a11a1c5d8c7585b"
+        },
+        {
+            "date": 1614444750930,
+            "name": "log\\error\\serverError-2021-02-28.log",
+            "hash": "fb98ae7c541963441e680a2d00a928c9"
+        },
+        {
+            "date": 1614563647858,
+            "name": "log\\error\\serverError-2021-03-01.log",
+            "hash": "37a0a9c31fb9942065579b61c5ead422"
+        },
+        {
+            "date": 1615044589589,
+            "name": "log\\error\\serverError-2021-03-07.log",
+            "hash": "f4f88cfe12b4a6b7ca7ff66cee967a86"
+        },
+        {
+            "date": 1615264554759,
+            "name": "log\\error\\serverError-2021-03-09.log",
+            "hash": "05a25708c2524bebf040769c385da5fd"
+        },
+        {
+            "date": 1615379915944,
+            "name": "log\\error\\serverError-2021-03-10.log",
+            "hash": "517c930d0ec684675d7d0fd71e935cff"
+        },
+        {
+            "date": 1615466636941,
+            "name": "log\\error\\serverError-2021-03-11.log",
+            "hash": "b0018c20ae4a2f2fc70cef80cc6ae018"
+        },
+        {
+            "date": 1615485280077,
+            "name": "log\\error\\serverError-2021-03-12.log",
+            "hash": "b4f680ce7d42f5fa522e5bc9a6d5fe91"
+        },
+        {
+            "date": 1615596030164,
+            "name": "log\\error\\serverError-2021-03-13.log",
+            "hash": "daaf9045f5f5cde414ea9b15dce5fad7"
+        },
+        {
+            "date": 1615648312238,
+            "name": "log\\error\\serverError-2021-03-14.log",
+            "hash": "e98016111ad4f99c9e8ec8621af75a18"
+        },
+        {
+            "date": 1616272516587,
+            "name": "log\\error\\serverError-2021-03-21.log",
+            "hash": "b1d3b59b474270b07b08d3fa7be656bc"
+        },
+        {
+            "date": 1616358311952,
+            "name": "log\\error\\serverError-2021-03-22.log",
+            "hash": "c6f961a5098bd74aea68d36d6dd074fb"
+        },
+        {
+            "date": 1616427408690,
+            "name": "log\\error\\serverError-2021-03-23.log",
+            "hash": "34a3c9f523b689ecd19ff68475f00d0a"
+        },
+        {
+            "date": 1616511848879,
+            "name": "log\\error\\serverError-2021-03-24.log",
+            "hash": "fd8e71f370aa1d105f12c660f496cfcf"
+        },
+        {
+            "date": 1616674113998,
+            "name": "log\\error\\serverError-2021-03-25.log",
+            "hash": "7273d678e6f0340accad971bb735bc04"
+        }
+    ]
+}
