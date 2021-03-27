@@ -18,42 +18,7 @@ dotev.config();
 
 
 router.get('/paymnts_lists', async (req, res, next) => {
-    let result_status = false;
-
     try {
-        if (!req.headers['authorization']) {
-            //console.log('req.headers[\'authorization\'] -> ', req.headers['authorization']);
-            return res.json({"code": '000', "desc": "auth-token missing error", "info": null});
-        }
-        // verify auth credentials
-        const base64Credentials =  req.headers['authorization'].split(' ')[1];
-        let decodedValue = jwt.verify(base64Credentials, process.env.COMM_PASSWD,);
-        console.log('decodedValue.db_email ->>>>>>> ',decodedValue.db_email)
-        // decodedValue -  { db_email:  'grandskywind@daum.net', iat:1616514554 }
-
-        const sql0 = ` SELECT
-                            count(*) cnt
-                       FROM user
-                       WHERE email = ? `;
-
-        await new Promise(async (res, rej) => {
-                await conn.query(sql0, [decodedValue.db_email], (err, rows) => {
-                    if (err) rej(err);
-                    else res(rows[0].cnt);
-                });
-            }
-        ).then( (val) => {
-            val > 0 ?
-                result_status = true
-            :
-                result_status = false
-            }
-        ).catch(e => {
-            throw new Error(e);
-        })
-
-        console.log('result_status - ', result_status);
-        if (result_status){
             let {
                 comp_nm_Ref_v,
                 jungsan_date_Ref_v,
@@ -103,9 +68,7 @@ router.get('/paymnts_lists', async (req, res, next) => {
                     res.json(rows);
                 }
             });
-        }else{
-            return res.json({"code": '000', "desc": "auth failure", "info": null});
-        }
+
     }
     catch (e) {
         console.error(e);
@@ -115,7 +78,45 @@ router.get('/paymnts_lists', async (req, res, next) => {
 
 
 router.get('/Paymnts_Info', async (req, res, next) => {
+    let result_status = false;
+
      try {
+         if (!req.headers['authorization']) {
+             //console.log('req.headers[\'authorization\'] -> ', req.headers['authorization']);
+             return res.json({"code": '000', "desc": "auth-token missing error", "info": null});
+         }
+         // verify auth credentials
+         const base64Credentials =  req.headers['authorization'].split(' ')[1];
+         let decodedValue = jwt.verify(base64Credentials, process.env.COMM_PASSWD,);
+         console.log('decodedValue.db_email ->>>>>>> ',decodedValue.db_email)
+         // decodedValue -  { db_email:  'grandskywind@daum.net', iat:1616514554 }
+
+         const sql0 = ` SELECT
+                            count(*) cnt
+                       FROM user
+                       WHERE email = ? `;
+
+         await new Promise(async (res, rej) => {
+                 await conn.query(sql0, [decodedValue.db_email], (err, rows) => {
+                     if (err) rej(err);
+                     else res(rows[0].cnt);
+                 });
+             }
+         ).then( (val) => {
+                 val > 0 ?
+                     result_status = true
+                     :
+                     result_status = false
+             }
+         ).catch(e => {
+             throw new Error(e);
+         })
+
+         console.log('result_status - ', result_status);
+         if (!result_status){
+             return res.json({"code": '000', "desc": "auth failure", "info": null});
+         }
+
         let {
             idx
         } = req.query;

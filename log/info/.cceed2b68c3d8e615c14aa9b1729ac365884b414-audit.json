@@ -134,6 +134,11 @@
             "date": 1616674113993,
             "name": "log\\info\\serverInfo-2021-03-25.log",
             "hash": "1d8284e9b8e79cc4a6c290ad8924d0c9"
+        },
+        {
+            "date": 1616833625852,
+            "name": "log\\info\\serverInfo-2021-03-27.log",
+            "hash": "2f94ac13bbb18c46f412f4438f76007f"
         }
     ]
 }
